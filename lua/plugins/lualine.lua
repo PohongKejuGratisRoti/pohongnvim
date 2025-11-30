@@ -99,7 +99,12 @@ return {
           lualine_c = { filename },
           lualine_x = { diagnostics, diff, { 'encoding', cond = hide_in_width }, { 'filetype', cond = hide_in_width } },
           lualine_y = { 'location' },
-          lualine_z = { 'progress' },
+          lualine_z = { 'progress', {
+              function()
+                return "PohongKeju"
+              end,
+            }, 
+          },
         },
         inactive_sections = {
           lualine_a = {},

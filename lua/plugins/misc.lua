@@ -55,4 +55,9 @@ return {
         require('colorizer').setup()
       end,
     },
+    {
+      -- Java LSP support
+    'mfussenegger/nvim-jdtls',
+    },
+
   }
