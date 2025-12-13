@@ -24,9 +24,7 @@ require("lazy").setup({
 	require("plugins.autoformating"),
 	require("plugins.alpha"),
 	require("plugins.jdtls"),
-
-	
-
+	require("plugins.autotag"),
 })
 
 

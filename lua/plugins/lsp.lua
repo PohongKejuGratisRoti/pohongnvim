@@ -206,6 +206,22 @@ return { -- LSP Configuration & Plugins
       cssls = {},
       ltex = {},
       texlab = {},
+      pylsp = {
+      settings = {
+      pylsp = {
+        plugins = {
+          pyflakes = { enabled = true },
+          pycodestyle = { enabled = true },
+          autopep8 = { enabled = false },
+          yapf = { enabled = false },
+          mccabe = { enabled = true },
+          pylsp_mypy = { enabled = true },
+          pylsp_black = { enabled = true },
+          pylsp_isort = { enabled = true },
+        },
+      },
+    },
+  },
       
     }
 
