@@ -28,6 +28,19 @@ require("lazy").setup({
 })
 
 
-
-
 vim.cmd.colorscheme("catppuccin-latte")
+
+
+
+
+-- diagnostics.lua (or init.lua)
+vim.diagnostic.config({
+	signs = true,
+	virtual_text = true,
+	underline = true,
+})
+
+vim.fn.sign_define("DiagnosticSignError", { text = "E" })
+vim.fn.sign_define("DiagnosticSignWarn",  { text = "W" })
+vim.fn.sign_define("DiagnosticSignHint",  { text = "H" })
+vim.fn.sign_define("DiagnosticSignInfo",  { text = "I" })
